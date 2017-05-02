@@ -13,7 +13,7 @@ sudo yum install -y openssl-devel.x86_64 openssl.x86_64
 
 /opt/rh/devtoolset-3/root/usr/bin/g++ --version
 vi ~/.bashrc 
-	-- ADD FOLLOWING LINES 
+	#-- ADD FOLLOWING LINES 
 	PATH=/opt/rh/devtoolset-3/root/usr/bin/:$PATH
 	export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-2.b11.el7_3.x86_64
 	
@@ -25,12 +25,13 @@ wget http://mirrors.gigenet.com/apache/maven/maven-3/3.5.0/binaries/apache-maven
 tar xvf apache-maven-3.5.0-bin.tar.gz 
 mv apache-maven-3.5.0  /usr/local/apache-maven
 vi .bashrc
+	#-- ADD FOLLOWING LINES
 	export M2_HOME=/usr/local/apache-maven
 	export M2=$M2_HOME/bin
 	export PATH=$M2:$PATH
  
+. ~/..bashrc
 
-********************************************************************************
 
 cd
 git clone --recursive https://github.com/automatak/dnp3.git
