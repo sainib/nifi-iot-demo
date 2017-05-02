@@ -2,7 +2,7 @@
 
 ## Installing Stuff
 ```
-sudo yum install -y wget git boost.x86_64
+sudo yum install -y wget git boost.x86_64 cmake
 sudo yum group install "Development Tools"
 sudo yum install -y centos-release-scl-rh
 sudo yum install -y devtoolset-3-gcc devtoolset-3-gcc-c++
@@ -34,7 +34,7 @@ cd
 git clone --recursive https://github.com/automatak/dnp3.git
 cd ./dnp3
 cmake -DCMAKE_C_COMPILER="/opt/rh/devtoolset-3/root/usr/bin/gcc"  -DCMAKE_CXX_COMPILER="/opt/rh/devtoolset-3/root/usr/bin/g++" ../dnp3 -DDNP3_ALL=ON -Wno-dev
-make -f 
+make -j
 sudo make install 
 cd java
 mvn install
