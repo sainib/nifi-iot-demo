@@ -1,5 +1,6 @@
 # Instructions to install run sample (example) opendnp app on centos
 
+## Installing Stuff
 ```
 sudo yum install -y wget git boost.x86_64
 sudo yum group install "Development Tools"
@@ -37,6 +38,19 @@ make -f
 sudo make install 
 cd java
 mvn install
+```
 
+# Running Demo
+
+## Running Master
+
+```
 java -Djava.library.path="/root/dnp3" -cp ./:./opendnp3-example-2.2.0-SNAPSHOT.jar:./lib/opendnp3-bindings-2.2.0-SNAPSHOT.jar:./lib/opendnp3-codegen-2.2.0-SNAPSHOT.jar com.automatak.dnp3.example.MasterDemo
+```
+
+
+## Running Outstation
+
+```
+java -Djava.library.path="/root/dnp3" -cp ./:./opendnp3-example-2.2.0-SNAPSHOT.jar:./lib/opendnp3-bindings-2.2.0-SNAPSHOT.jar:./lib/opendnp3-codegen-2.2.0-SNAPSHOT.jar com.automatak.dnp3.example.OutstationDemo
 ```
