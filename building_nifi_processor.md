@@ -4,7 +4,8 @@
 
 * Scan
 * SendTask
-* ReceiveTaskUpdate?? 
+* ReceiveTaskUpdate ?? 
+* ConvertDNP3ToJSON ?? 
 
 
 
