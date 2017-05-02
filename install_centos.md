@@ -7,6 +7,8 @@ sudo yum group install "Development Tools"
 sudo yum install -y centos-release-scl-rh
 sudo yum install -y devtoolset-3-gcc devtoolset-3-gcc-c++
 sudo yum install -y java-1.8.0-openjdk-devel.x86_64
+sudo yum install -y openssl-devel.x86_64 openssl.x86_64
+
 
 
 /opt/rh/devtoolset-3/root/usr/bin/g++ --version
