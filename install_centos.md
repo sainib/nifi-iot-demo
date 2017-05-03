@@ -42,7 +42,7 @@ sudo make install
 cd java
 mvn install
 
-cd target
+cd example/target
 mkdir lib
 cp ~/.m2/repository/com/automatak/dnp3/opendnp3-bindings/2.2.0-SNAPSHOT/opendnp3-bindings-2.2.0-SNAPSHOT.jar ./lib/
 cp ~/.m2/repository/com/automatak/dnp3/opendnp3-codegen/2.2.0-SNAPSHOT/opendnp3-codegen-2.2.0-SNAPSHOT.jar ./lib/
